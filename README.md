@@ -2,7 +2,7 @@
 
 > 💡 Planing to add scripts for passing metrics to InfluxDB and rendering in Grafana
 
-Command Line Interface via PowerShell module for sofrtware [CrystalDiskInfo](https://github.com/hiyohiyo/CrystalDiskInfo).
+Command Line Interface using PowerShell module for sofrtware [CrystalDiskInfo](https://github.com/hiyohiyo/CrystalDiskInfo).
 
 Function: `Get-DiskInfo`
 
@@ -91,6 +91,5 @@ ReallocatedSectorsCount : {36}
 0F                      : {0}
 
 PS C:\Windows\System32> $(Get-CrystalDiskInfo -Report)."MSI M390 250GB511220510128001162".Temperature
-
 39
 ```
