@@ -2,12 +2,14 @@
 
 > 💡 Planing to add scripts for passing metrics to InfluxDB and rendering in Grafana
 
-Command Line Interface using PowerShell module for sofrtware [CrystalDiskInfo](https://github.com/hiyohiyo/CrystalDiskInfo).
+Command line interface using PowerShell module for sofrtware [CrystalDiskInfo](https://github.com/hiyohiyo/CrystalDiskInfo).
+
+When the program CrystalDiskInfo scans for information about the state of physical disks using, it saves its data in an ini file. This module reads only current and relevant data for provides information in the format of a PowerShell object.
 
 Function: `Get-DiskInfo`
 
 Parameters: \
-`$path` - Set your own path to the installed program \
+`$path` - Set your own path to the installed program (default: `C:\Program Files\CrystalDiskInfo`) \
 `Report` - Generate report right now (the program is started for the time of report generation, you must **use the console with administrator rights**). Without this option the last received data are generated, if the program is running constantly, the refresh rate can be changed in the interface settings or in the file: `DiskInfo.ini (Settings - AutoRefresh)`.
 
 ## Examples:
