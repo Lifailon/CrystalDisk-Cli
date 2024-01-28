@@ -1,6 +1,8 @@
 # CrystalDisk-cli
 
-Command line interface (PowerShell module) for sofrtware CrystalDisk
+> 💡 Planing to add scripts for passing metrics to InfluxDB and rendering in Grafana
+
+Command Line Interface via PowerShell module for sofrtware [CrystalDiskInfo](https://github.com/hiyohiyo/CrystalDiskInfo).
 
 Function: `Get-DiskInfo`
 
