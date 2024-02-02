@@ -1,7 +1,5 @@
 # CrystalDisk-cli
 
-> 💡 Planing to add scripts for passing metrics to InfluxDB and rendering in Grafana
-
 Command line interface using PowerShell module for sofrtware [CrystalDiskInfo](https://github.com/hiyohiyo/CrystalDiskInfo).
 
 When the program CrystalDiskInfo scans for information about the state of physical disks using, it saves its data in an ini file. This module reads only current and relevant data for provides information in the format of a PowerShell object.
