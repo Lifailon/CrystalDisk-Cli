@@ -21,7 +21,7 @@ CommandType     Name               Version    Source
 Function        ConvertFrom-Ini    0.0        CrystalDisk
 Function        Get-DiskInfo       0.0        CrystalDisk
 
-PS C:\Windows\System32> Get-CrystalDiskInfo -Report | fl
+PS C:\Windows\System32> Get-DiskInfo -Report | fl
 
 MSI M390 250GB511220510128001162      : @{Date=System.Collections.Hashtable+ValueCollection; HealthStatus=System.Collections.Hashtable+ValueCollection; Temperature
                                         =System.Collections.Hashtable+ValueCollection; PowerOnHours=System.Collections.Hashtable+ValueCollection; PowerOnCount=Syst
@@ -63,7 +63,7 @@ WDC WD2005FBYZ-01YCBB2WD-WMC6N0L3JK47 : @{Date=System.Collections.Hashtable+Valu
                                         shtable+ValueCollection}
 
 
-PS C:\Windows\System32> $(Get-CrystalDiskInfo -Report)."MSI M390 250GB511220510128001162"
+PS C:\Windows\System32> $(Get-DiskInfo -Report)."MSI M390 250GB511220510128001162"
 
 Date                    : {2024/01/28 20:49:12}
 HealthStatus            : {1}
@@ -90,6 +90,6 @@ ReallocatedSectorsCount : {36}
 0E                      : {0}
 0F                      : {0}
 
-PS C:\Windows\System32> $(Get-CrystalDiskInfo -Report)."MSI M390 250GB511220510128001162".Temperature
+PS C:\Windows\System32> $(Get-DiskInfo -Report)."MSI M390 250GB511220510128001162".Temperature
 39
 ```

@@ -72,6 +72,6 @@ function Get-DiskInfo {
     $NewObject
 }
 
-# Get-CrystalDiskInfo
-# Get-CrystalDiskInfo -Report
-# Get-CrystalDiskInfo -Path "C:\Program Files\CrystalDiskInfo" -Report
+# Get-DiskInfo
+# Get-DiskInfo -Report
+# Get-DiskInfo -Path "C:\Program Files\CrystalDiskInfo" -Report
