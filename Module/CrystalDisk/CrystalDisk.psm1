@@ -73,5 +73,11 @@ function Get-DiskInfo {
 }
 
 # Get-DiskInfo
-# Get-DiskInfo -Report
-# Get-DiskInfo -Path "C:\Program Files\CrystalDiskInfo" -Report
+# Get-DiskInfo -Path "C:\Program Files\CrystalDiskInfo"
+# Просканировать и получить актуальный отчет:
+# Get-DiskInfo -Report | Format-List
+# Список дисков:
+# $(Get-DiskInfo | Get-Member -MemberType NoteProperty).Name
+# Обратиться к конкретному диску по имени и получить метрику температуры
+# $(Get-DiskInfo -Report)."MSI M390 250GB511220510128001162"
+# $(Get-DiskInfo -Report)."MSI M390 250GB511220510128001162".Temperature
