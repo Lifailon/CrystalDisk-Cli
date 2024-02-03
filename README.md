@@ -4,7 +4,15 @@ Command line interface using PowerShell module for sofrtware [CrystalDiskInfo](h
 
 When the program CrystalDiskInfo scans for information about the state of physical disks using, it saves its data in an ini file. This module reads only current and relevant data for provides information in the format of a PowerShell object.
 
-Function: `Get-DiskInfo`
+### Install
+
+You can install the module from the repository [nuget](https://www.nuget.org/packages/CrystalDisk-Cli/):
+
+```PowerShell
+Install-Module CrystalDisk-Cli -Repository NuGet
+```
+
+Main function: `Get-DiskInfo`
 
 Parameters: \
 `$path` - Set your own path to the installed program (default: `C:\Program Files\CrystalDiskInfo`) \
@@ -13,13 +21,11 @@ Parameters: \
 ## Examples:
 
 ```PowerShell
-Import-Module CrystalDisk
-Get-Command -Module CrystalDisk
+PS C:\Windows\System32> Import-Module CrystalDisk-Cli
+PS C:\Windows\System32> $(Get-Command -Module CrystalDisk-Cli).Name
 
-CommandType     Name               Version    Source
------------     ----               -------    ------
-Function        ConvertFrom-Ini    0.0        CrystalDisk
-Function        Get-DiskInfo       0.0        CrystalDisk
+ConvertFrom-Ini
+Get-DiskInfo
 
 PS C:\Windows\System32> Get-DiskInfo -Report | Format-List
 
