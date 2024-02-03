@@ -24,10 +24,10 @@ Parameters: \
 PS C:\Windows\System32> Import-Module CrystalDisk-Cli
 PS C:\Windows\System32> Get-Command -Module CrystalDisk-Cli
 
-CommandType     Name                                               Version    Source
------------     ----                                               -------    ------
-Function        ConvertFrom-Ini                                    0.1        CrystalDisk-Cli
-Function        Get-DiskInfo                                       0.1        CrystalDisk-Cli
+CommandType     Name                           Version    Source
+-----------     ----                           -------    ------
+Function        ConvertFrom-Ini                0.1        CrystalDisk-Cli
+Function        Get-DiskInfo                   0.1        CrystalDisk-Cli
 
 PS C:\Windows\System32> Get-DiskInfo -Report | Format-List
 
