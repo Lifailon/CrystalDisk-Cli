@@ -1,4 +1,4 @@
-# CrystalDisk-cli
+# CrystalDisk-Cli
 
 Command line interface using PowerShell module for sofrtware [CrystalDiskInfo](https://github.com/hiyohiyo/CrystalDiskInfo).
 
@@ -22,10 +22,12 @@ Parameters: \
 
 ```PowerShell
 PS C:\Windows\System32> Import-Module CrystalDisk-Cli
-PS C:\Windows\System32> $(Get-Command -Module CrystalDisk-Cli).Name
+PS C:\Windows\System32> Get-Command -Module CrystalDisk-Cli
 
-ConvertFrom-Ini
-Get-DiskInfo
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Function        ConvertFrom-Ini                                    0.1        CrystalDisk-Cli
+Function        Get-DiskInfo                                       0.1        CrystalDisk-Cli
 
 PS C:\Windows\System32> Get-DiskInfo -Report | Format-List
 
