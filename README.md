@@ -1,5 +1,10 @@
 # CrystalDisk-Cli
 
+[![GitHub Release](https://img.shields.io/github/v/release/Lifailon/CrystalDisk-Cli?display_name=release&logo=GitHub&label=GitHub&link=https%3A%2F%2Fgithub.com%2FLifailon%2FCrystalDisk-Cli%2F)](https://github.com/Lifailon/CrystalDisk-Cli)
+[![NuGet Version](https://img.shields.io/nuget/v/ps.win.api?logo=NuGet&label=NuGet&link=https%3A%2F%2Fwww.nuget.org%2Fpackages%2Fps.win.api)](https://www.nuget.org/packages/ps.win.api)
+[![GitHub top language](https://img.shields.io/github/languages/top/Lifailon/CrystalDisk-Cli?logo=PowerShell&link=https%3A%2F%2Fgithub.com%2FPowerShell%2FPowerShell)](https://github.com/PowerShell/PowerShell)
+[![GitHub License](https://img.shields.io/github/license/Lifailon/CrystalDisk-Cli?link=https%3A%2F%2Fgithub.com%2FLifailon%2FCrystalDisk-Cli%2Fblob%2Frsa%2FLICENSE)](https://github.com/Lifailon/CrystalDisk-Cli/blob/rsa/LICENSE)
+
 Command line interface using PowerShell module for software [CrystalDiskInfo](https://github.com/hiyohiyo/CrystalDiskInfo).
 
 When the program CrystalDiskInfo scans for information about the state of physical disks using, it saves its data in an ini files. This module reads current and relevant data for provides information in the format of a PowerShell Object/Collection.
