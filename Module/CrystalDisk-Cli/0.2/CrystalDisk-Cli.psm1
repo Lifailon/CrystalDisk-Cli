@@ -31,6 +31,7 @@ function Get-DiskInfo {
     .DESCRIPTION
     Examples:
     Get-DiskInfo
+    $(Get-DiskInfo)[0].Temperature
     Get-DiskInfo -Path "C:\Program Files\CrystalDiskInfo"
     Get-DiskInfo -List
     Get-DiskInfo -Report

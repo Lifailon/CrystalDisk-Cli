@@ -4,7 +4,7 @@
     Author            = "Lifailon"
     CompanyName       = "Open Source Community"
     Description       = "Command line interface using PowerShell module for sofrtware CrystalDiskInfo"
-    PowerShellVersion = "7.3"
+    PowerShellVersion = "5.1"
     PrivateData       = @{
         PSData = @{
             Tags         = @("Disk","CrystalDisk","CrystalDiskInfo","""SMART","Temperature")
